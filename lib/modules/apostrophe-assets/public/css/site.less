@@ -1,0 +1,231 @@
+@import "utils/reset.less";
+
+// Delete the boilerplate CSS below when you are ready to dive in and customize your sites:
+body {
+  background-color: @apos-light;
+  font-family: 'Karla', sans-serif;
+  // font-family: 'Patrick Hand', cursive !important;
+}
+
+nav {
+  // display: none !important;
+  // position: relative;
+}
+
+a {
+  color: #365577 !important;
+  // display: none;
+  // opacity: 0;
+}
+
+a:hover {
+  color: #99a6b9 !important;
+  text-decoration: none;
+}
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+
+#profile-pic {
+  // opacity: 0;
+  // visibility: hidden;
+  position: relative;
+  display: none;
+}
+
+#about {
+  // padding-top: 30px;
+  // height: 800px;
+  // color: #fff;
+  // background-color: #1E88E5;
+}
+
+#skills {
+  // padding-top: 72px;
+  // height: 600px;
+  // color: #fff;
+  // background-color: #673ab7;
+}
+
+#skill-list {
+  // visibility: hidden;
+  // display: none;
+  // opacity: 0.0;
+  position: relative;
+  // margin-left: -100px;
+}
+
+#social {
+  // padding-top: 70px;
+  height: 600px;
+  // color: #fff;
+  // background-color: #ff9800;
+}
+
+#header-box,
+#header-icons,
+.header-info,
+.media-icon,
+.media {
+  opacity: 0;
+}
+
+.tool-icon {
+  // visibility: hidden;
+  display: none;
+  opacity: 0.0;
+  position: relative;
+}
+
+.sharpie {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.manuscript {
+  font-family: 'Patrick Hand', cursive;
+}
+
+.handwriting {
+  font-family: 'Reenie Beanie', cursive;
+  // font-family: 'Pangolin', cursive;
+}
+
+.bg-theme {
+  background-color: #99a6b9 !important;
+}
+
+.bg-dark-blue {
+  background-color: #365577 !important;
+}
+
+.bg-dark-orange {
+  background-color: #FF8C00 !important;
+}
+
+.bg-vue {
+  background-color: #42b883 !important;
+}
+
+.bg-xlight {
+  background-color: #fcfcfc !important;
+}
+
+.text-theme {
+  color: #99a6b9 !important;
+}
+
+.text-dark-blue {
+  color: #365577 !important;
+}
+
+.navbar-expand .navbar-nav .nav-link {
+  padding-right: 0.1rem !important;
+}
+
+.hexa,
+.hexa div {
+  margin: 0 auto;
+  transform-origin: 50% 50%;
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+}
+
+.hexa {
+  width: 305px;
+  height: 160px;
+}
+
+.hexa div {
+  width: 100%;
+  height: 100%;
+}
+
+.hexa {
+  transform: rotate(120deg);
+}
+
+.hex1 {
+  transform: rotate(-60deg);
+}
+
+.hex2 {
+  transform: rotate(-60deg);
+}
+
+// .losange,
+// .losange div {
+//   margin: 0 auto;
+//   transform-origin: 50% 50%;
+//   overflow: hidden;
+//   width: 150px;
+//   height: 150px;
+// }
+
+// .losange {
+//   transform: rotate(45deg) translateY(10px);
+// }
+
+// .losange .los1 {
+//   width: 255px;
+//   height: 255px;
+//   transform: rotate(-45deg) translateY(-74px);
+// }
+
+// .losange .los1 img {
+//   width: 100%;
+//   height: auto;
+// }
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  #header-info {
+    height: 800px
+  }
+
+  #skills {
+    // padding-top: 70px;
+    // height: 600px;
+    // color: #fff;
+    // background-color: #673ab7;
+  }
+
+  .media-icon {
+    // display: block;
+  }
+
+  .sm-height {
+    height: 75px;
+  }
+
+  .md-height {
+    height: 250px;
+  }
+
+  .lg-height {
+    height: 410px;
+  }
+
+  .xl-height {
+    height: 600px;
+  }
+
+  #skill-list .mb-md-5 {
+    margin-bottom: 7rem !important;
+  }
+}
+
+@media (max-width: 350px) {
+  #timeline .row {
+    .pr-3 {
+      padding-right: 0.7rem !important;
+    }
+  }
+
+  // .bullet-space{
+
+  // }
+}

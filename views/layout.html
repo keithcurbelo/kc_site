@@ -1,0 +1,134 @@
+{# Automatically extends the right outer layout and also handles AJAX siutations #}
+{% extends data.outerLayout %}
+
+{% block title %}
+{# Create a useful, SEO-friendly title tag based on what we have #}
+{% if data.piece %}
+{{ data.piece.title }}
+{% elseif data.page %}
+{{ data.page.title }}
+{% else %}
+{{ apos.log('Looks like you forgot to override the title block in a template that does not have access to an Apostrophe
+page or piece.') }}
+{% endif %}
+{% endblock %}
+
+{% block extraHead %}
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+  crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Patrick+Hand|Permanent+Marker|Pangolin|Reenie+Beanie" rel="stylesheet">
+<!-- {#
+    This block outputs its contents in the HTML document's <head>.
+    It is a good place to put extra <script> <link> and <meta> tags.
+  #} -->
+{% endblock %}
+
+{% block beforeMain %}
+{#
+We recommend you use the beforeMain block for global page components
+like headers or navigation.
+#}
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <!---------------- NAVBAR ------------------>
+  <nav class="nav navbar fixed-top navbar-expand navbar-light bg-light" style="display:none;">
+    <ul class="navbar-nav mr-auto">
+      <a class="navbar-brand" href="#top">
+        <span class="navbar-text d-sm-none d-inline-block">
+          Keith C.
+        </span>
+        <span class="navbar-text d-none d-sm-inline-block">
+          Keith Curbelo
+        </span>
+      </a>
+    </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#skills">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  {% endblock %}
+
+  {% block main %}
+  {#
+  Usually, your page templates in the apostrophe-pages module will override
+  this block. It is safe to assume this is where your page-specific content
+  should go.
+  #}
+  {% endblock %}
+
+  {% block afterMain %}
+  {#
+  This would be a great place to put a global footer.
+  #}
+  <!---------------- FOOTER CONTAINER ------------------>
+  <footer id="contact" class="container-fluid">
+    <!-- <div class="container-fluid bg-dark text-light" style="height:300px;">
+      <div class="row text-center">
+        <div class="col">
+          <i class="fab fa-facebook fa-5x"></i>
+        </div>
+        <div class="col h-25">
+          <i class="fab fa-linkedin fa-5x"></i>
+        </div>
+      </div>
+    </div> -->
+    <!------- Contact ------>
+    <!-- <div class="container"></div> -->
+    <div class="row border-top bg-dark-blue text-light">
+      <div class="col-12 col-md-4 px-4 py-3 text-md-right md-height">
+        <h3>Contact Me</h3>
+        <span class="font-weight-light">
+          Don't worry. I read my messages.
+        </span>
+      </div>
+      <div class="col-12 col-md-8 pt-3 px-4">
+        <div class="row text-center text-theme">
+          <div class="col-12 col-md-4 mb-3">
+            <h6 class="">Resume</h6>
+            <span class="text-light">
+              <a href="https://drive.google.com/file/d/1jgcC__spBqBppKc6cX3PDpK8fS2CN7ud/view?usp=sharing" class="mr-0 text-white">
+                <i class="fas fa-file-alt fa-2x"></i>
+              </a>
+            </span>
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <h6 class="">Phone</h6>
+            <span class="font-weight-light">786.210.1141</span>
+          </div>
+          <!-- <div class="col-12 col-md-3 mb-3">
+                            <h6 class="">Website</h6>
+                            <span class="font-weight-light">www.keithcurbelo.com</span>
+                        </div> -->
+          <div class="col-12 col-md-4 mb-3">
+            <h6 class="">E-Mail</h6>
+            <span class="font-weight-light">keithcurbelo@yahoo.com</span>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col">
+            <a href="https://www.linkedin.com/in/keithcurbelo" class="mr-3 text-white">
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://github.com/kcurbel" class="mr-3 text-white">
+              <i class="fab fa-github-square fa-2x"></i>
+            </a>
+            <a href="https://www.facebook.com/keith.curbelo" class="text-white"><i class="fab fa-facebook fa-2x"></i></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-right text-muted">
+            <small> Keith Curbelo 2019</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  {% endblock %}
