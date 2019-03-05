@@ -1,482 +1,637 @@
-{% extends "layout.html" %}
-{% block main %}
+{% extends "layout.html" %} {% block main %}
 <div class="container-fluid bg-light">
-    <!------- HEADER ------>
-    <!-- im shy please say hi -->
-    <div id="header-info" class="row px-4 bg-white" style="padding-top:70px;">
-        <div class="col-12 col-md-4 text-center" style="height:180px;">
-            <div class="row sm-height d-none d-md-block"></div>
-            <img src="https://media.licdn.com/dms/image/C5603AQFQHj6GCspnAQ/profile-displayphoto-shrink_200_200/0?e=1556755200&v=beta&t=n5hH6R-KOJg2a6D3uDMMRHqtjlcJoobArJTUm7bQoIY"
-                id="profile-pic" width="165" height="165" alt="profile_pic" class="rounded-circle shadow" />
-            <div class="row lg-height d-sm-none d-md-block">
-                <div class="col-11 d-flex align-items-end h-100 float-right">
-                    <blockquote class="blockquote text-right d-none d-md-block header-info">
-                        <p class="mb-0 text-muted handwriting">
-                            If I had asked people what they wanted, they would have said faster horses.
-                        </p>
-                        <footer class="blockquote-footer font-italic">
-                            <small><cite title="Source Title">Henry Ford</cite></small>
-                        </footer>
-                    </blockquote>
-                </div>
-            </div>
-
+  <!------- HEADER ------>
+  <!-- im shy please say hi -->
+  <div id="header-info" class="row px-4 bg-white" style="padding-top:70px;">
+    <div class="col-12 col-md-4 text-center" style="height:180px;">
+      <div class="row sm-height d-none d-md-block"></div>
+      <img
+        src="https://media.licdn.com/dms/image/C5603AQFQHj6GCspnAQ/profile-displayphoto-shrink_200_200/0?e=1556755200&v=beta&t=n5hH6R-KOJg2a6D3uDMMRHqtjlcJoobArJTUm7bQoIY"
+        id="profile-pic"
+        width="165"
+        height="165"
+        alt="profile_pic"
+        class="rounded-circle shadow"
+      />
+      <div class="row lg-height d-sm-none d-md-block">
+        <div class="col-11 d-flex align-items-end h-100 float-right">
+          <blockquote
+            class="blockquote text-right d-none d-md-block header-info"
+          >
+            <p class="mb-0 text-muted handwriting">
+              If I had asked people what they wanted, they would have said
+              faster horses.
+            </p>
+            <footer class="blockquote-footer font-italic">
+              <small><cite title="Source Title">Henry Ford</cite></small>
+            </footer>
+          </blockquote>
         </div>
-        <div class="col-12 col-md-8 bg-white header-deatils">
-            <div class="row sm-height d-sm-none d-md-block"></div>
-            <div class="row">
-                <div class="col-12 text-center text-md-left">
-                    <h1 class="text-center text-md-left">
-                        <span class="media font-weight-light text-muted">Keith</span>
-                        <span class="media text-uppercase text-theme sharpie">Curbelo</span>
-                    </h1>
-                </div>
-            </div>
-            <div class="row mb-3 text-center">
-                <div class="col-12 col-md-6 font-weight-light text-md-left text-muted">
-                    <div class="media manuscript">Web & Mobile Application Developer</div>
-                </div>
-                <div id="header-icons" class="col-12 col-md-6 mt-3 mt-md-0 text-md-right">
-                    <span class="mr-3 d-inline-block d-md-block">
-                        <a href="https://www.linkedin.com/in/keithcurbelo" class="media-icon">
-                            <i class="fab fa-linkedin fa-2x"></i>
-                        </a>
-                    </span>
-                    <span class="mr-3 d-inline-block d-md-block">
-                        <a href="https://www.facebook.com/keith.curbelo" class="media-icon">
-                            <i class="fab fa-facebook fa-2x"></i>
-                        </a>
-                    </span>
-                    <span class="mr-0 mr-md-3 d-inline-block d-md-block">
-                        <a href="https://drive.google.com/file/d/1jgcC__spBqBppKc6cX3PDpK8fS2CN7ud/view?usp=sharing"
-                            class="media-icon">
-                            <i class="fas fa-book fa-2x"></i>
-                        </a>
-                    </span>
-                </div>
-            </div>
-            <div class="row md-height d-sm-none d-md-block"></div>
-            <div id="header-box" class="row border-top text-center pt-3 text-muted">
-                <div class="col-12 col-md-4 mb-3 header-info">
-                    <h6 class="text-dark-blue">Location</h6>
-                    <span class="font-weight-light">Miami, FL</span>
-                </div>
-                <div class="col-12 col-md-4 mb-3 header-info">
-                    <h6 class="text-dark-blue">Phone</h6>
-                    <span class="font-weight-light">786.210.1141</span>
-                </div>
-                <!-- <div class="col-12 col-md-3 mb-3">
+      </div>
+    </div>
+    <div class="col-12 col-md-8 bg-white header-deatils">
+      <div class="row sm-height d-sm-none d-md-block"></div>
+      <div class="row">
+        <div class="col-12 text-center text-md-left">
+          <h1 class="text-center text-md-left">
+            <span class="media font-weight-light text-muted">Keith</span>
+            <span class="media text-uppercase text-theme sharpie">Curbelo</span>
+          </h1>
+        </div>
+      </div>
+      <div class="row mb-3 text-center">
+        <div class="col-12 col-md-6 font-weight-light text-md-left text-muted">
+          <div class="media manuscript">Web & Mobile Application Developer</div>
+        </div>
+        <div
+          id="header-icons"
+          class="col-12 col-md-6 mt-3 mt-md-0 text-md-right"
+        >
+          <span class="mr-3 d-inline-block d-md-block">
+            <a
+              href="https://www.linkedin.com/in/keithcurbelo"
+              class="media-icon"
+            >
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+          </span>
+          <span class="mr-3 d-inline-block d-md-block">
+            <a href="https://www.facebook.com/keith.curbelo" class="media-icon">
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+          </span>
+          <span class="mr-0 mr-md-3 d-inline-block d-md-block">
+            <a
+              href="https://drive.google.com/file/d/1jgcC__spBqBppKc6cX3PDpK8fS2CN7ud/view?usp=sharing"
+              class="media-icon"
+            >
+              <i class="fas fa-book fa-2x"></i>
+            </a>
+          </span>
+        </div>
+      </div>
+      <div class="row md-height d-sm-none d-md-block"></div>
+      <div id="header-box" class="row border-top text-center pt-3 text-muted">
+        <div class="col-12 col-md-4 mb-3 header-info">
+          <h6 class="text-dark-blue">Location</h6>
+          <span class="font-weight-light">Miami, FL</span>
+        </div>
+        <div class="col-12 col-md-4 mb-3 header-info">
+          <h6 class="text-dark-blue">Phone</h6>
+          <span class="font-weight-light">786.210.1141</span>
+        </div>
+        <!-- <div class="col-12 col-md-3 mb-3">
                     <h6 class="">Website</h6>
                     <span class="font-weight-light">www.keithcurbelo.com</span>
                 </div> -->
-                <div class="col-12 col-md-4 mb-3 header-info">
-                    <h6 class="text-dark-blue">E-Mail</h6>
-                    <span class="font-weight-light">keithcurbelo@yahoo.com</span>
+        <div class="col-12 col-md-4 mb-3 header-info">
+          <h6 class="text-dark-blue">E-Mail</h6>
+          <span class="font-weight-light">keithcurbelo@yahoo.com</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!------- ABOUT INTRO ------>
+  <div id="about" class="row">
+    <div
+      class="col-12 col-md-4 bg-light px-4 py-3 text-md-right lg-height text-theme"
+    >
+      <h3 class="">Hi!</h3>
+      <span class="font-weight-light">
+        My name is.. (what?)<br />
+        My name is... (who?)
+      </span>
+    </div>
+    <div class="col-12 col-md-8 px-4 py-3 bg-xlight">
+      <span class="font-weight-light text-muted">
+        I am a self-motivated developer, currently residing in Miami, FL. I like
+        front-end development just as much as I like back-end. I have designed
+        and built web, mobile, and desktop applications. Programming is one of
+        many tools I use to keep my mind sharp. I really enjoy throwing myself
+        into projects, and that goes beyond programming. I have set up events,
+        created marketing campaigns, as well as participate in home renovations.
+        Projects are the catalyst to achieving goals and making a dream into a
+        reality, so why not embrace them?
+      </span>
+    </div>
+  </div>
+  <!------- SKILLS ------>
+  <div id="skills" class="row mb-3 mb-md-0">
+    <!-- SKILLS HEADER -->
+    <div class="col-12 col-md-4 px-4 py-3 text-md-right text-theme">
+      <h3>Skills</h3>
+      <span class="font-weight-light">
+        I can be useful.
+      </span>
+    </div>
+    <!-- SKILLS LIST -->
+    <div class="col-12 col-md-8 px-4 xl-height bg-white pad-for-nav">
+      <div id="skill-list" class="row">
+        <div class="col-12 col-md-6 text-center xl-height">
+          <div class="col-12 mt-3 mb-md-5">
+            <div class="h4 text-dark-blue">HTML</div>
+            <div class="row">
+              <div class="pl-3 mr-1" style="width:40px;">
+                <img
+                  src="uploads/attachments/html_logo_only.png"
+                  width="40"
+                  height="35"
+                  alt="html"
+                />
+              </div>
+              <div class="col pt-2">
+                <div class="progress" style="height: 20px;">
+                  <div
+                    id="html"
+                    class="progress-bar bg-dark-orange"
+                    role="progressbar"
+                    style="width: 0%"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    Advanced
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-    </div>
-    <!------- ABOUT INTRO ------>
-    <div id="about" class="row">
-        <div class="col-12 col-md-4 bg-light px-4 py-3 text-md-right lg-height text-theme">
-            <h3 class="">Hi!</h3>
-            <span class="font-weight-light">
-                My name is.. (what?)<br>
-                My name is... (who?)
-            </span>
-        </div>
-        <div class="col-12 col-md-8 px-4 py-3 bg-xlight">
-            <span class="font-weight-light text-muted">
-                I am a self-motivated developer, currently residing in Miami, FL. I like front-end development just as
-                much as I like back-end. I have designed and built web, mobile, and desktop applications.
-                Programming is one of many tools I use to keep my mind sharp. I really enjoy throwing myself into
-                projects, and that goes beyond programming. I have set up events, created marketing campaigns, as well
-                as participate in home renovations. Projects are the catalyst to achieving goals and making a dream
-                into a reality, so why not embrace them?
-            </span>
-        </div>
-    </div>
-    <!------- SKILLS ------>
-    <div id="skills" class="row mb-3 mb-md-0">
-        <!-- SKILLS HEADER -->
-        <div class="col-12 col-md-4 px-4 py-3 text-md-right text-theme">
-            <h3>Skills</h3>
-            <span class="font-weight-light">
-                I can be useful.
-            </span>
-        </div>
-        <!-- SKILLS LIST -->
-        <div class="col-12 col-md-8 px-4 xl-height bg-white pad-for-nav">
-            <div id="skill-list" class="row">
-                <div class="col-12 col-md-6 text-center xl-height">
-                    <div class="col-12 mt-3 mb-md-5">
-                        <div class="h4 text-dark-blue">HTML</div>
-                        <div class="row">
-                            <div class="pl-3 mr-1" style="width:40px;">
-                                <img src="uploads/attachments/html_logo_only.png" width="40" height="35" alt="html" />
-                            </div>
-                            <div class="col pt-2">
-                                <div class="progress" style="height: 20px;">
-                                    <div id="html" class="progress-bar bg-dark-orange" role="progressbar" style="width: 0%"
-                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Advanced</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 mt-3 mb-md-5">
-                        <div class="h4 text-dark-blue">CSS</div>
-                        <div class="row">
-                            <div class="pl-3 mr-1" style="width:40px;">
-                                <img src="uploads/attachments/css3.png" width="37" height="37" alt="css" />
-                            </div>
-                            <div class="col pt-2">
-                                <div class="progress" style="height: 20px;">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 0%"
-                                        aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">Proficient</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 mt-3">
-                        <div class="h4 text-dark-blue">JavaScript</div>
-                        <div class="row">
-                            <div class="pl-3 mr-1" style="width:40px;">
-                                <img src="uploads/attachments/js.png" width="40" height="38" alt="js" />
-                            </div>
-                            <div class="col pt-2">
-                                <div class="progress" style="height: 20px;">
-                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 0%"
-                                        aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">Proficient</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+          <div class="col-12 mt-3 mb-md-5">
+            <div class="h4 text-dark-blue">CSS</div>
+            <div class="row">
+              <div class="pl-3 mr-1" style="width:40px;">
+                <img
+                  src="uploads/attachments/css3.png"
+                  width="37"
+                  height="37"
+                  alt="css"
+                />
+              </div>
+              <div class="col pt-2">
+                <div class="progress" style="height: 20px;">
+                  <div
+                    class="progress-bar bg-info"
+                    role="progressbar"
+                    style="width: 0%"
+                    aria-valuenow="60"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    Proficient
+                  </div>
                 </div>
-                <div class="col-12 col-md-6 text-center">
-                    <div class="col-12 mt-3 mb-md-5">
-                        <div class="h4 text-dark-blue">Angular</div>
-                        <div class="row">
-                            <div class="pl-3 mr-1" style="width:40px;">
-                                <img src="uploads/attachments/angular_logo.png" width="40" height="40" alt="ang" />
-                            </div>
-                            <div class="col pt-2">
-                                <div class="progress" style="height: 20px;">
-                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%"
-                                        aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">Intermediate</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 mt-3 mb-md-5">
-                        <div class="h4 text-dark-blue">Vue.js</div>
-                        <div class="row">
-                            <div class="pl-3 mr-1" style="width:40px;">
-                                <img src="uploads/attachments/vuejs.png" width="36" height="36" alt="js" />
-                            </div>
-                            <div class="col pt-2">
-                                <div class="progress" style="height: 20px;">
-                                    <div class="progress-bar bg-vue" role="progressbar" style="width: 0%" aria-valuenow="25"
-                                        aria-valuemin="0" aria-valuemax="100">Novice</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 mt-3">
-                        <div class="h4 text-dark-blue">Node.js</div>
-                        <div class="row">
-                            <div class="pl-1 mr-1" style="width:55px;">
-                                <img src="uploads/attachments/nodejs_dark.png" width="60" height="40" alt="js" />
-                            </div>
-                            <div class="col pt-2 pl-2">
-                                <div class="progress" style="height: 20px;">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 0%"
-                                        aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">Intermediate</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
+          <div class="col-12 mt-3">
+            <div class="h4 text-dark-blue">JavaScript</div>
+            <div class="row">
+              <div class="pl-3 mr-1" style="width:40px;">
+                <img
+                  src="uploads/attachments/js.png"
+                  width="40"
+                  height="38"
+                  alt="js"
+                />
+              </div>
+              <div class="col pt-2">
+                <div class="progress" style="height: 20px;">
+                  <div
+                    class="progress-bar bg-warning"
+                    role="progressbar"
+                    style="width: 0%"
+                    aria-valuenow="60"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    Proficient
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="col-12 col-md-6 text-center">
+          <div class="col-12 mt-3 mb-md-5">
+            <div class="h4 text-dark-blue">Angular</div>
+            <div class="row">
+              <div class="pl-3 mr-1" style="width:40px;">
+                <img
+                  src="uploads/attachments/angular_logo.png"
+                  width="40"
+                  height="40"
+                  alt="ang"
+                />
+              </div>
+              <div class="col pt-2">
+                <div class="progress" style="height: 20px;">
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 0%"
+                    aria-valuenow="45"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    Intermediate
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mt-3 mb-md-5">
+            <div class="h4 text-dark-blue">Vue.js</div>
+            <div class="row">
+              <div class="pl-3 mr-1" style="width:40px;">
+                <img
+                  src="uploads/attachments/vuejs.png"
+                  width="36"
+                  height="36"
+                  alt="js"
+                />
+              </div>
+              <div class="col pt-2">
+                <div class="progress" style="height: 20px;">
+                  <div
+                    class="progress-bar bg-vue"
+                    role="progressbar"
+                    style="width: 0%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    Novice
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mt-3">
+            <div class="h4 text-dark-blue">Node.js</div>
+            <div class="row">
+              <div class="pl-1 mr-1" style="width:55px;">
+                <img
+                  src="uploads/attachments/nodejs_dark.png"
+                  width="60"
+                  height="40"
+                  alt="js"
+                />
+              </div>
+              <div class="col pt-2 pl-2">
+                <div class="progress" style="height: 20px;">
+                  <div
+                    class="progress-bar bg-success"
+                    role="progressbar"
+                    style="width: 0%"
+                    aria-valuenow="45"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    Intermediate
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!------- Tools ------>
-    <div class="row">
-        <div class="col-12 col-md-4 bg-light px-4 py-3 text-md-right lg-height text-theme">
-            <h3>Tools</h3>
-            <span class="font-weight-light">
-                I've tried not to hurt myself.
-            </span>
+  </div>
+  <!------- Tools ------>
+  <div class="row">
+    <div
+      class="col-12 col-md-4 bg-light px-4 py-3 text-md-right lg-height text-theme"
+    >
+      <h3>Tools</h3>
+      <span class="font-weight-light">
+        I've tried not to hurt myself.
+      </span>
+    </div>
+    <div class="col-12 col-md-8 pt-3 px-4 bg-xlight xl-height">
+      <div class="row text-center">
+        <div class="col-12 col-md-6 mt-5">
+          <img
+            src="uploads/attachments/sqlserver.png"
+            width="100"
+            height="90"
+            class="tool-icon"
+            alt="ionic"
+          />
         </div>
-        <div class="col-12 col-md-8 pt-3 px-4 bg-xlight xl-height">
-            <div class="row text-center">
-                <div class="col-12 col-md-6 mt-5">
-                    <img src="uploads/attachments/sqlserver.png" width="100" height="90" class="tool-icon" alt="ionic" />
-                </div>
-                <div class="col-12 col-md-6 mt-5">
-                    <img src="uploads/attachments/postgres.png" width="90" height="90" class="tool-icon" alt="postgresql" />
-                </div>
-                <div class="col-12 col-md-6 mt-5 mb-5">
-                    <img src="uploads/attachments/graphql_logo.png" width="90" height="90" class="tool-icon" alt="graphql" />
-                </div>
-                <!-- </div>
+        <div class="col-12 col-md-6 mt-5">
+          <img
+            src="uploads/attachments/postgres.png"
+            width="90"
+            height="90"
+            class="tool-icon"
+            alt="postgresql"
+          />
+        </div>
+        <div class="col-12 col-md-6 mt-5 mb-5">
+          <img
+            src="uploads/attachments/graphql_logo.png"
+            width="90"
+            height="90"
+            class="tool-icon"
+            alt="graphql"
+          />
+        </div>
+        <!-- </div>
             <div class="row text-center"> -->
-                <div class="col-12 col-md-6 mt-5">
-                    <img src="uploads/attachments/bootstrap.png" width="90" height="90" class="tool-icon" alt="postgresql" />
-                </div>
-                <div class="col-12 col-md-6 mt-5">
-                    <img src="uploads/attachments/ionic.png" width="160" height="60" class="tool-icon" alt="ionic" />
-                </div>
-                <div class="col-12 col-md-6 mt-5 mb-5">
-                    <img src="uploads/attachments/git_dark.png" width="90" height="90" class="tool-icon" alt="graphql" />
-                </div>
-            </div>
+        <div class="col-12 col-md-6 mt-5">
+          <img
+            src="uploads/attachments/bootstrap.png"
+            width="90"
+            height="90"
+            class="tool-icon"
+            alt="postgresql"
+          />
         </div>
+        <div class="col-12 col-md-6 mt-5">
+          <img
+            src="uploads/attachments/ionic.png"
+            width="160"
+            height="60"
+            class="tool-icon"
+            alt="ionic"
+          />
+        </div>
+        <div class="col-12 col-md-6 mt-5 mb-5">
+          <img
+            src="uploads/attachments/git_dark.png"
+            width="90"
+            height="90"
+            class="tool-icon"
+            alt="graphql"
+          />
+        </div>
+      </div>
     </div>
-    <!-- </div> -->
-    <!------- EXPERIENCE ------>
-    <div class="row mt-3 mt-md-0">
-        <div class="col-12 col-md-4 bg-light px-4 py-3 text-md-right lg-height text-theme">
-            <h3>Experience</h3>
-            <span class="font-weight-light">
-                My dark past.
-            </span>
-        </div>
-        <!--------- TIMELINE -------->
-        <div id="timeline" class="container col-12 col-md-8 pt-3 px-md-0 bg-white">
-            <div>
-                <!-- date bullet -->
-                <div class="row">
-                    <div class="col-2 text-right d-flex align-items-end  justify-content-center pb-1 pr-3">
-                        <i class="fas fa-circle text-warning"></i>
-                    </div>
-                    <div class="col-10 d-flex align-items-end pl-0">
-                        <div class="p font-weight-light text-muted">
-                            <small>March 2018 - January 2019</small>
-                        </div>
-                    </div>
-                </div>
-                <!-- GoToIT Solutions -->
-                <div class="row">
-                    <div class="col-1 border-right border-secondary"></div>
-                    <div class="col-10">
-                        <div class="row pt-1">
-                            <div class="col-12 col-md-5">
-                                <div class="h4">
-                                    GoToIT Solutions
-                                </div>
-                                <div class="p font-italic">
-                                    Software Developer
-                                </div>
-                                <p class="text-muted">
-                                    <small>Pembroke Park, FL</small>
-                                </p>
-                            </div>
-                            <div class="col-12 col-md-7">
-                                <p class="lead text-muted pl-2 py-2 py-md-0 pr-0">
-                                    Flee in terror at cucumber discovered on floor terrorize the
-                                    hundred-and-twenty-pound
-                                    rottweiler and steal his bed, not sorry, and hiiiiiiiiii feed me now scream at teh
-                                    bath
-                                    yet paw at your fat belly, refuse to leave cardboard box so meow meow mama. Toy
-                                    mouse
-                                    squeak roll over cats are fats i like to pets them they like to meow back and kitty
-                                    run
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- space in timeline -->
-                <div class="row" style="height:30px;">
-                    <div class="col-1 border-right border-secondary"></div>
-                    <div class="col"></div>
-                </div>
-                <!-- date bullet -->
-                <div class="row">
-                    <div class="col-2 text-right d-flex align-items-end  justify-content-center pb-1 pr-3">
-                        <i class="fas fa-circle text-success"></i>
-                    </div>
-                    <div class="col-10 d-flex align-items-end pl-0">
-                        <div class="font-weight-light text-muted">
-                            <small>December 2017</small>
-                        </div>
-                    </div>
-                </div>
-                <!-- graduation -->
-                <div class="row">
-                    <div class="col-1 border-right border-secondary"></div>
-                    <div class="col-10 bg-theme text-light border rounded">
-                        <div class="row pt-1">
-                            <div class="col-12 col-md-5">
-                                <div class="h4">
-                                    College Graduation!!!
-                                </div>
-                                <div class="p font-italic">
-                                    B.S. Computer Science
-                                </div>
-                                <p class="text-light">
-                                    <small>Boca Raton, FL</small>
-                                </p>
-                            </div>
-                            <div class="col-12 col-md-7">
-                                <p class="lead text-light pl-2 py-2 py-md-0 pr-0">
-                                    I officially received my college diploma.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- space in timeline -->
-                <div class="row" style="height:50px;">
-                    <div class="col-1 border-right border-secondary"></div>
-                </div>
-                <!-- date bullet -->
-                <div class="row">
-                    <div class="col-2 text-right d-flex align-items-end  justify-content-center pb-1 pr-3">
-                        <i class="fas fa-circle text-warning"></i>
-                    </div>
-                    <div class="col-10 d-flex align-items-end pl-0">
-                        <div class="p font-weight-light text-muted">
-                            <small>October 2017</small>
-                            <!-- - March 2018 -->
-                        </div>
-                    </div>
-                </div>
-                <!-- KINETIX Solutions -->
-                <div class="row">
-                    <div class="col-1 border-right border-secondary"></div>
-                    <div class="col-10">
-                        <div class="row pt-1">
-                            <div class="col-12 col-md-5">
-                                <div class="h4">
-                                    Kinetix Solutions
-                                </div>
-                                <div class="p font-italic">
-                                    Software Developer
-                                </div>
-                                <p class="text-muted">
-                                    <small>Coral Springs, FL</small>
-                                </p>
-                            </div>
-                            <div class="col-12 col-md-7">
-                                <p class="text-muted pl-2 py-2 py-md-0 pr-0">
-                                    Flee in terror at cucumber discovered on floor terrorize the
-                                    hundred-and-twenty-pound
-                                    rottweiler and steal his bed, not sorry, and hiiiiiiiiii feed me now scream at teh
-                                    bath
-                                    yet paw at your fat belly, refuse to leave cardboard box so meow meow mama. Toy
-                                    mouse
-                                    squeak roll over cats are fats i like to pets them they like to meow back and kitty
-                                    run
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- date bullet -->
-                <div class="row">
-                    <div class="col-2 text-right d-flex align-items-end  justify-content-center pb-1 pr-3">
-                        <i class="fas fa-circle text-warning"></i>
-                    </div>
-                    <div class="col-10 d-flex align-items-end pl-0">
-                        <div class="p font-weight-light text-muted">
-                            <small>May 2017</small>
-                            <!-- - August 2017 -->
-                        </div>
-                    </div>
-                </div>
-                <!-- VIP SWARMER -->
-                <div class="row">
-                    <div class="col-1 border-right border-secondary"></div>
-                    <div class="col-10">
-                        <div class="row pt-1">
-                            <div class="col-12 col-md-5">
-                                <div class="h4">
-                                    VIP Swarmer, Inc.
-                                </div>
-                                <div class="font-italic">
-                                    Intern
-                                </div>
-                                <p class="text-muted">
-                                    <small>Miami, FL</small>
-                                </p>
-                            </div>
-                            <div class="col-12 col-md-7">
-                                <p class="lead text-muted pl-2 py-2 py-md-0 pr-0">
-                                    Flee in terror at cucumber discovered on floor terrorize the
-                                    hundred-and-twenty-pound
-                                    rottweiler and steal his bed, not sorry, and hiiiiiiiiii feed me now scream at teh
-                                    bath
-                                    yet paw at your fat belly, refuse to leave cardboard box so meow meow mama. Toy
-                                    mouse
-                                    squeak roll over cats are fats i like to pets them they like to meow back and kitty
-                                    run
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- date bullet -->
-                <div class="row">
-                    <div class="col-2 text-right d-flex align-items-end  justify-content-center pb-1 pr-3">
-                        <i class="fas fa-circle text-warning"></i>
-                    </div>
-                    <div class="col-10 d-flex align-items-end pl-0">
-                        <div class="font-weight-light text-muted">
-                            <small>Early Beginings</small>
-                        </div>
-                    </div>
-                </div>
-                <!-- COLLEGE LIFE -->
-                <div class="row">
-                    <div class="col-1 border-right border-secondary"></div>
-                    <div class="col-10 bg-light border rounded">
-                        <div class="row pt-1">
-                            <div class="col-12 col-md-5">
-                                <div class="h4">
-                                    My College Life
-                                </div>
-                                <div class="p font-italic">
-                                    B.S. Computer Science
-                                </div>
-                                <p class="text-muted">
-                                    <small>Boca Raton, FL</small>
-                                </p>
-                            </div>
-                            <div class="col-12 col-md-7">
-                                <p class="lead text-muted pl-2 py-2 py-md-0 pr-0">
-                                    Flee in terror at cucumber discovered on floor terrorize the
-                                    hundred-and-twenty-pound
-                                    rottweiler and steal his bed, not sorry, and hiiiiiiiiii feed me now scream at teh
-                                    bath
-                                    yet paw at your fat belly, refuse to leave cardboard box so meow meow mama. Toy
-                                    mouse
-                                    squeak roll over cats are fats i like to pets them they like to meow back and kitty
-                                    run
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- FINAL date bullet -->
-                <div class="row">
-                    <div class="col-2 text-right d-flex justify-content-center pb-1 pr-3">
-                        <i class="fas fa-circle text-black-50"></i>
-                    </div>
-                    <div class="col-10 d-flex align-items-end pl-0">
-                        <div class="p font-weight-light text-muted">
-                            <!-- <small>May 2017</small> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--------- TIMELINE End -------->
+  </div>
+  <!-- </div> -->
+  <!------- EXPERIENCE ------>
+  <div class="row mt-3 mt-md-0">
+    <div
+      class="col-12 col-md-4 bg-light px-4 py-3 text-md-right lg-height text-theme"
+    >
+      <h3>Experience</h3>
+      <span class="font-weight-light">
+        My dark past.
+      </span>
     </div>
-    <!------- Contact ------>
-    <!-- <div class="row">
+    <!--------- TIMELINE -------->
+    <div id="timeline" class="container col-12 col-md-8 pt-3 px-md-0 bg-white">
+      <div>
+        <!-- date bullet -->
+        <div class="row">
+          <div
+            class="col-2 text-right d-flex align-items-end  justify-content-center pb-1 pr-3"
+          >
+            <i class="fas fa-circle text-warning"></i>
+          </div>
+          <div class="col-10 d-flex align-items-end pl-0">
+            <div class="p font-weight-light text-muted">
+              <small>March 2018 - January 2019</small>
+            </div>
+          </div>
+        </div>
+        <!-- GoToIT Solutions -->
+        <div class="row">
+          <div class="col-1 border-right border-secondary"></div>
+          <div class="col-10">
+            <div class="row pt-1">
+              <div class="col-12 col-md-5">
+                <div class="h4">
+                  <a
+                    href="https://www.gotoitsolutions.com/"
+                    target="_blank"
+                    class="text-dark-blue"
+                  >
+                    GoToIT Solutions
+                  </a>
+                </div>
+                <div class="p font-italic">
+                  Software Developer
+                </div>
+                <p class="text-muted">
+                  <small>Pembroke Park, FL</small>
+                </p>
+              </div>
+              <div class="col-12 col-md-7">
+                <p class="lead text-muted pl-2 py-2 py-md-0 pr-0">
+                  I assisted in the development of 2 mobile applications. One
+                  was for internal use and the other for the general public. I
+                  used Ionic,AngularJS, Angular, and Vue.js to create the
+                  front-end compenents as well as Node.js for all back-end
+                  support.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- space in timeline -->
+        <div class="row" style="height:30px;">
+          <div class="col-1 border-right border-secondary"></div>
+          <div class="col"></div>
+        </div>
+        <!-- date bullet -->
+        <div class="row">
+          <div
+            class="col-2 text-right d-flex align-items-end  justify-content-center pb-1 pr-3"
+          >
+            <i class="fas fa-circle text-success"></i>
+          </div>
+          <div class="col-10 d-flex align-items-end pl-0">
+            <div class="font-weight-light text-muted">
+              <small>December 2017</small>
+            </div>
+          </div>
+        </div>
+        <!-- graduation -->
+        <div class="row">
+          <div class="col-1 border-right border-secondary"></div>
+          <div class="col-10 bg-theme text-light border rounded">
+            <div class="row pt-1">
+              <div class="col-12 col-md-5">
+                <div class="h4">
+                  College Graduation!!!
+                </div>
+                <div class="p font-italic">
+                  B.S. Computer Science
+                </div>
+                <p class="text-light">
+                  <small>Boca Raton, FL</small>
+                </p>
+              </div>
+              <div class="col-12 col-md-7">
+                <p class="lead text-light pl-2 py-2 py-md-0 pr-0">
+                  I officially received my college diploma.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- space in timeline -->
+        <div class="row" style="height:50px;">
+          <div class="col-1 border-right border-secondary"></div>
+        </div>
+        <!-- date bullet -->
+        <div class="row">
+          <div
+            class="col-2 text-right d-flex align-items-end  justify-content-center pb-1 pr-3"
+          >
+            <i class="fas fa-circle text-warning"></i>
+          </div>
+          <div class="col-10 d-flex align-items-end pl-0">
+            <div class="p font-weight-light text-muted">
+              <small>October 2017</small>
+              <!-- - March 2018 -->
+            </div>
+          </div>
+        </div>
+        <!-- KINETIX Solutions -->
+        <div class="row">
+          <div class="col-1 border-right border-secondary"></div>
+          <div class="col-10">
+            <div class="row pt-1">
+              <div class="col-12 col-md-5">
+                <div class="h4">
+                  <a
+                    href="http://kinetixsolutions.com/"
+                    target="_blank"
+                    class="text-dark-blue"
+                  >
+                    Kinetix Solutions
+                  </a>
+                </div>
+                <div class="p font-italic">
+                  Software Developer
+                </div>
+                <p class="text-muted">
+                  <small>Coral Springs, FL</small>
+                </p>
+              </div>
+              <div class="col-12 col-md-7">
+                <p class="text-muted pl-2 py-2 py-md-0 pr-0">
+                  Flee in terror at cucumber discovered on floor terrorize the
+                  hundred-and-twenty-pound rottweiler and steal his bed, not
+                  sorry, and hiiiiiiiiii feed me now scream at teh bath yet paw
+                  at your fat belly, refuse to leave cardboard box so meow meow
+                  mama. Toy mouse squeak roll over cats are fats i like to pets
+                  them they like to meow back and kitty run
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- date bullet -->
+        <div class="row">
+          <div
+            class="col-2 text-right d-flex align-items-end  justify-content-center pb-1 pr-3"
+          >
+            <i class="fas fa-circle text-warning"></i>
+          </div>
+          <div class="col-10 d-flex align-items-end pl-0">
+            <div class="p font-weight-light text-muted">
+              <small>May 2017</small>
+              <!-- - August 2017 -->
+            </div>
+          </div>
+        </div>
+        <!-- VIP SWARMER -->
+        <div class="row">
+          <div class="col-1 border-right border-secondary"></div>
+          <div class="col-10">
+            <div class="row pt-1">
+              <div class="col-12 col-md-5">
+                <div class="h4">
+                  <a
+                    href="http://swarmer.com/"
+                    target="_blank"
+                    class="text-dark-blue"
+                  >
+                    VIP Swarmer
+                  </a>
+                </div>
+                <div class="font-italic">
+                  Intern
+                </div>
+                <p class="text-muted">
+                  <small>Miami, FL</small>
+                </p>
+              </div>
+              <div class="col-12 col-md-7">
+                <p class="lead text-muted pl-2 py-2 py-md-0 pr-0">
+                  My first internship! I did alot more than anticipated. I
+                  learned about web-design, SEO, and ASO. I designed my first
+                  professional web-pages and was temporarily of the marketing
+                  team. I also teamed up with senior developers to learn about
+                  back-end architecture.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- date bullet -->
+        <div class="row">
+          <div
+            class="col-2 text-right d-flex align-items-end  justify-content-center pb-1 pr-3"
+          >
+            <i class="fas fa-circle text-warning"></i>
+          </div>
+          <div class="col-10 d-flex align-items-end pl-0">
+            <div class="font-weight-light text-muted">
+              <small>Early Beginings</small>
+            </div>
+          </div>
+        </div>
+        <!-- COLLEGE LIFE -->
+        <div class="row">
+          <div class="col-1 border-right border-secondary"></div>
+          <div class="col-10 bg-light border rounded">
+            <div class="row pt-1">
+              <div class="col-12 col-md-5">
+                <div class="h4">
+                  My College Life
+                </div>
+                <div class="p font-italic">
+                  B.S. Computer Science
+                </div>
+                <p class="text-muted">
+                  <small>Boca Raton, FL</small>
+                </p>
+              </div>
+              <div class="col-12 col-md-7">
+                <p class="lead text-muted pl-2 py-2 py-md-0 pr-0">
+                  These years were my baby steps in the world of programming.
+                  This is where i began learning how to use HTML, CSS, and
+                  scripting languages. I gained my first experience with AGILE
+                  development being the team leader/ SCRUM master as part of
+                  academic projects.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FINAL date bullet -->
+        <div class="row">
+          <div class="col-2 text-right d-flex justify-content-center pb-1 pr-3">
+            <i class="fas fa-circle text-black-50"></i>
+          </div>
+          <div class="col-10 d-flex align-items-end pl-0">
+            <div class="p font-weight-light text-muted">
+              <!-- <small>May 2017</small> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------- TIMELINE End -------->
+  </div>
+  <!------- Contact ------>
+  <!-- <div class="row">
         <div class="col-12 bg-light px-4 py-3">
             <h3>Contact</h3>
             <span class="font-weight-light">
