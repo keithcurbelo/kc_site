@@ -1,6 +1,6 @@
 ## My website
 
-This project was created to spike a the ApostropheCMS tool.
+This project was created to spike ApostropheCMS tool.
 
 #### Getting Started
 
